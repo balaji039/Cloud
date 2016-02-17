@@ -1,3 +1,4 @@
+import math
 from matrixformer import matrixcomputation
 from attributecalc import multiattribute
 from normalizer import normaliser
@@ -18,7 +19,16 @@ class mainframe:
 m=mainframe()
 no=normaliser(m.matr)
 normatrix=no.normalizematrix()
-print normatrix
+#print normatrix
 g=weightcalc()
 we=g.attributecalc(normatrix)
+m=len(we)
+T=[]
+for i in range(0,3):
+    T.append([])
+    for j in range(0,7):
+        temp=normatrix[i][j]*we[j]
+        T[-1].append(temp)
+
+print T
 
