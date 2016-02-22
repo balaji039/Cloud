@@ -55,32 +55,32 @@ class multiattribute:
         hs=array1[3]
         ms=array1[4]
         cs=array1[5]
-        bs=array1[6]
+        #bs=array1[6]
 
         hs2=array1[3]
         ms2=array1[4]
         cs2=array1[5]
-        bs2=array1[6]
+        #bs2=array1[6]
 
         hs3=array1[3]
         ms3=array1[4]
         cs3=array1[5]
-        bs3=array1[6]
+        #bs3=array1[6]
 
         hr=self.ap.harddiskutilisation(n,hs)
         mr=self.ap.memoryutilisation(n,ms)
         cr=self.ap.cpuutilisation(n,cs)
-        br=self.ap.bandwidthutilisation(n,bs)
+        #br=self.ap.bandwidthutilisation(n,bs)
 
         hr2=self.ap.harddiskutilisation(n2,hs2)
         mr2=self.ap.memoryutilisation(n2,ms2)
         cr2=self.ap.cpuutilisation(n2,cs2)
-        br2=self.ap.bandwidthutilisation(n2,bs2)
+        #br2=self.ap.bandwidthutilisation(n2,bs2)
 
         hr3=self.ap.harddiskutilisation(n3,hs3)
         mr3=self.ap.memoryutilisation(n3,ms3)
         cr3=self.ap.cpuutilisation(n3,cs3)
-        br3=self.ap.bandwidthutilisation(n3,bs3)
+        #br3=self.ap.bandwidthutilisation(n3,bs3)
 
         mat=[]
         mat.append([])
@@ -91,7 +91,7 @@ class multiattribute:
         mat[-1].append(hr)
         mat[-1].append(mr)
         mat[-1].append(cr)
-        mat[-1].append(br)
+        #mat[-1].append(br)
 
         mat.append([])
 
@@ -101,7 +101,7 @@ class multiattribute:
         mat[-1].append(hr2)
         mat[-1].append(mr2)
         mat[-1].append(cr2)
-        mat[-1].append(br2)
+        #mat[-1].append(br2)
 
         mat.append([])
 
@@ -111,7 +111,7 @@ class multiattribute:
         mat[-1].append(hr3)
         mat[-1].append(mr3)
         mat[-1].append(cr3)
-        mat[-1].append(br3)
+        #mat[-1].append(br3)
 
         return mat
 
